@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #a4b0be;
+  margin: 0;
+  color: #1e272e;
+  font-family: "Delius", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #5ad1e6;
+  font-weight: bold;
+  font-size: 36px;
+}
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0px;
+  background-color: #5ad1e6;
+  left: 0;
+  border-radius: 1px;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: .25s linear;
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav {
+  text-align: center;
+  background-color: #747d8c;
+  margin-bottom: 40px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+main {
+  padding: 0 50px 0 50px;
+}
+
+hr {
+  opacity .2;
+  border: 2px solid #747d8c;
+  border-radius: 2px;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+section {
+  padding: 20px 0 20px 0;
+}
+p {
+  text-align: center;
+  font-size: 24px;
+  text-indent: 50px;
+}
+p:first-letter {
+  font-weight: bold;
+  font-size: 26px;
+}
+.year {
+  font-style: italic;
+}
