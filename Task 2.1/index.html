@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form class="myForm" name="form1" name="form1" method="post" target="_blank" autocomplete>
+
+            <h3>Form Action<span>_mc4wp_action</span></h3>
+            <p>This field will allow visitors to choose whether they would like to subscribe or unsubscribe</p>
+
+            <label class="label" for="name">Field Label</label><br/>
+            <input type="text" name="name" id="name" placeholder="Form Action"><br/>
+
+            <label class="label" for="select-field">Choice Type</label><br/>
+            <div class="wrapper">
+                <select name="select-field" id="select-field">
+                    <option value="radio-1">Radio Buttons</option>
+                    <option value="text">Text</option>
+                </select><br/>
+            </div>
+            
+            
+            <label class="label">Choices</label><br/>
+            <fieldset>
+                <label class="lbl">
+                    <input class="radio" type="radio" name="choice" value="Subscribe">
+                    <span class="checkmark"></span>
+                    <input class="choice-text" type="text" name="choice2" placeholder="Subscribe">
+                    <button class="reset" type="reset"><img width="15px" src="img/x.png" alt="Reset"></button><br/>
+                </label>
+                
+                <label class="lbl">
+                    <input class="radio" type="radio" name="choice" value="Unsubscribe">
+                    <span class="checkmark"></span>
+                    <input class="choice-text" type="text" name="choice2" placeholder="Unsubscribe">
+                    <button class="reset" type="reset"><img width="15px" src="img/x.png" alt="Reset"></button><br/>
+                </label>
+                
+            </fieldset>
+
+       
+        <input class="checkbox" type="checkbox" name="wrap-paragraph" id="wrap" checked>
+        <label class="forcheck" for="wrap">Wrap in paragraph tags?</label><br/>
+
+        <button class="sub-btn" name="submit" type="submit">Add to form</button>
+
+            
+        </form>
+    </main>
+</body>
+</html>
