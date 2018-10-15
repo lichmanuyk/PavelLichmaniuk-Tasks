@@ -17,26 +17,40 @@ body {
     align-content: space-between;
     align-items: center;
     width: 70%;
-    background-color: #ac9f9f;
+    background: transparent;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(img/sprite.png);
+    transform: rotate(-4deg);
+    z-index: -1;
+    overflow: hidden;
 }
 
 .header__logo-wrap {
     background-color: rgba(255, 255, 255, 0.6);
-    margin: 50px 0 50px;
+    margin: 70px 0 50px;
     border: 1px solid #fff;
-    padding: 2px;
+    padding: 3px;
 }
 
 .header__logo {
-    border: 2px solid black;
+    border: 3px solid black;
     padding: 15px 20px;
 }
 
 .header__h1 {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Dancing Script', sans-serif;
     color: rgb(122, 122, 122);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin: 0;
 }
 
@@ -59,8 +73,10 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 18px;
+    padding: 20px;
+    padding-bottom: 8px;
     box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .block_black {
@@ -69,4 +85,60 @@ body {
 
 .block__row {
     display: flex;
+    margin-bottom: 13px;
+}
+
+.block__button-wrap {
+    display: flex;
+    align-items: flex-end;
+}
+
+.block__button {
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    font-size: 8px;
+    padding: 3px 7px 3px;
+    box-shadow: 0px 1px 1px 0 rgb(69, 78, 78);
+    margin-right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+/* Block's color-modificators */
+.block__button_pink {
+    background: linear-gradient(to top, rgb(226,35,147), rgb(232,83,170));
+}
+
+.block__button_green {
+    background: linear-gradient(to top, rgb(158,201,27), rgb(172,205,68));
+}
+
+.block__button_blue {
+    background: linear-gradient(to top, rgb(66,144,230), rgb(87,156,234));
+}
+
+.block__button_red {
+    background: linear-gradient(to top, rgb(233,63,63), rgb(240,92,92));
+}
+
+.block__button_orange {
+    background: linear-gradient(to top, rgb(254,109,25), rgb(255,129,57));
+}
+
+.block__button_yellow {
+    background: linear-gradient(to top, rgb(254,189,44), rgb(255,201,76));
+}
+
+/* Block's size-modificators */
+.block__button_size_xl {
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.4);
+}
+
+.block__button_size_sm {
+    font-size: 7px;
 }
