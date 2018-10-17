@@ -9,7 +9,7 @@ body {
 .header {
     width: 1170px;
     height: 100px;
-    background-color: #968484;
+    background-color: #ebd2e4;
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -62,11 +62,18 @@ body {
     width: 1170px;
     justify-content: center;
     margin: auto;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
 }
 
 .donec {
     display: flex;
     flex-basis: 50%;
+    flex-direction: column;
 }
 
 .main__img1 {
@@ -75,10 +82,88 @@ body {
     background-image: url(img/secondPict.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 292px;
+    background-position: 55% center;
+    min-height: 292px;
 }
 
 .skills {
     display: flex;
     flex-basis: 25%;
+    background-color: #e67e22;
+    flex-direction: column;
+}
+
+.skills__stack {
+    display: flex;
+}
+
+.stack-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 292px;
+    color: #000;
+    flex-basis: 25%;
+    padding: 0 20px;
+}
+
+.stack-block_brown {
+    background-color: #e67e22; 
+    color: #fff;
+}
+
+.stack-block_red {
+    background-color: #e74c3c; 
+    color: #fff;
+}
+
+.stack-block_black {
+    background-color: #000; 
+    color: #fff;
+}
+
+.experiences-img {
+    display: flex;
+    flex-basis: 50%;
+    min-height: 292px;
+    background-image: url(img/thirdPict.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experiences {
+    display: flex;
+    flex-basis: 50%;
+    background-color: #e74c3c;
+    color: #fff;
+    flex-direction: column;
+}
+
+.experiences__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.education-img {
+    display: flex;
+    flex-basis: 50%;
+    background-image: url(img/fourthPict.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.education {
+    display: flex;
+    flex-basis: 50%;
+    background-color: #e67e22;
+    color: #fff;
+    flex-direction: column;
+}
+
+.education__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
