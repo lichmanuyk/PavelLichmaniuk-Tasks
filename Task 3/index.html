@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" 
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     
 </head>
@@ -15,9 +16,9 @@
 
     <header class="header" id="home">
         <nav class="nav">
-            <div class="nav__logo"><a href="/">Stimulus</a></div>
+            <div class="nav__logo"><a class="nav__logo-a" href="/">Stimulus</a></div>
             <div class="nav__menu">
-                <a class="nav__item" href="#home">Home</a>
+                <a class="nav__item nav__item_active" href="#home">Home</a>
                 <a class="nav__item" href="#about">About me</a>
                 <a class="nav__item" href="#experiences">Experiences</a>
                 <a class="nav__item" href="#test">Testimonial</a>
@@ -27,11 +28,11 @@
 
         <div class="header-image"></div>
         <div class="header-content">
-            <p class="header-content__p">Welcome to my website</p>
-            <h1 class="header-content__h1">Hello, I am Stimulus currently based in New York city.</h1>
+            <p class="header-content__p header-content__p_upper">Welcome to my website</p>
+            <h1 class="header-content__h1">Hello, I am <span class="header-content__span">Stimulus</span> currently based in New York city.</h1>
             <p class="header-content__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Totam consequatur sed, dolorum minus omnis corrupti reprehenderit adipisci unde 
-                delectus dolores.</p>
+                Consequuntur molestiae omnis laboriosam sed at illum voluptatum dolorum placeat, repellat illo officia. 
+                Porro dolorum harum doloribus maiores ea saepe nisi reprehenderit?</p>
             <button class="header-conent__button">Get started</button>
         </div>
 
@@ -40,10 +41,10 @@
 
     <main class="main">
 
-        <section class="section">
+        <section class="section" id="about">
             <div class="donec">
                 <h2 class="donec__h2">Donec auctor</h2>
-                <p class="donec__accent-p">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p class="donec__p donec__p_accent">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 <p class="donec__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Nesciunt rem ullam illo pariatur officiis nisi cupiditate. Vitae eum excepturi rerum!</p>
                 <p class="donec__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -53,15 +54,27 @@
             <div class="skills">
                 <h2 class="skills__h2">My Skills</h2>
                 <p class="skills__stack">Photoshop . HTML CSS JS . Web Design</p>
-                <progress class="skills__progress" value="90" max="100">
-                    Текст
-                </progress>
-                <progress class="skills__progress" value="70" max="100">
-                    Текст
-                </progress>
-                <progress class="skills__progress" value="80" max="100">
-                    Текст
-                </progress>
+                <div class="skills__progress-wrap">
+                    <div class="skills__progress-values">
+                        <p class="skills__progress-item">Frontend Design</p>
+                        <p class="skills__progress-value">90%</p>
+                    </div>
+                   <progress class="skills__progress" value="90" max="100"></progress> 
+                </div>
+                <div class="skills__progress-wrap">
+                    <div class="skills__progress-values">
+                        <p class="skills__progress-item">Backend Processing</p>
+                        <p class="skills__progress-value">70%</p>
+                    </div>
+                    <progress class="skills__progress" value="70" max="100"></progress> 
+                </div>
+                <div class="skills__progress-wrap">
+                    <div class="skills__progress-values">
+                        <p class="skills__progress-item">HTML5 & CSS3</p>
+                        <p class="skills__progress-value">80%</p>
+                    </div>
+                    <progress class="skills__progress" value="80" max="100"></progress> 
+                </div>
             </div>
         </section>
 
@@ -71,54 +84,54 @@
             <div class="stack-block stack-block_brown">
                 <i class="stack-block__icon fas fa-desktop fa-2x"></i>
                 <h3 class="stack-block__h3">Interface Design</h3>
-                <p class="stack-block__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Praesentium mollitia nulla repudiandae recusandae? Delectus, aspernatur!</p>
+                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Error inventore vel temporibus veniam?</p>
             </div>
             <div class="stack-block stack-block_red">
                 <i class="stack-block__icon fab fa-telegram-plane fa-2x"></i>
                 <h3 class="stack-block__h3">Media Strategy</h3>
-                <p class="stack-block__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Obcaecati accusamus dignissimos soluta! Ut, facilis repellat.</p>
+                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Error inventore vel temporibus veniam?</p>
             </div>
             <div class="stack-block stack-block_black">
                 <i class="stack-block__icon fas fa-table fa-2x"></i>
                 <h3 class="stack-block__h3">Mobile App</h3>
-                <p class="stack-block__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptates hic optio mollitia. Ut, cum molestias!</p>
+                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Error inventore vel temporibus veniam?</p>
             </div>
             <div class="stack-block">
                 <i class="stack-block__icon fab fa-html5 fa-2x"></i>
                 <h3 class="stack-block__h3">Coding</h3>
-                <p class="stack-block__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Cupiditate praesentium nobis, excepturi atque nemo eligendi.</p>
+                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Error inventore vel temporibus veniam?</p>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="experiences">
                 <div class="experiences-img"></div>
                 <div class="experiences">
                     <h2 class="experiences__h2">My Experiences</h2>
                     <p class="experiences__p">Previous companies and my tasks</p>
     
                     <div class="experiences__block">
-                        <i class="experiences__icon fas fa-laptop fa-2x"></i>
+                        <i class="experiences__icon fas fa-laptop fa-lg"></i>
                         <div class="experiences__text">
-                            <h3 class="experiences__h3">Graphic Designer 2014 Jul - 2015 Sep</h3>
+                            <h3 class="experiences__h3">Graphic Designer <span class="experiences__span">2014 Jul - 2015 Sep</span></h3>
                             <p class="experiences__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
     
                     <div class="experiences__block">
-                        <i class="experiences__icon fas fa-laptop fa-2x"></i>
+                        <i class="experiences__icon fas fa-laptop fa-lg"></i>
                         <div class="experiences__text">
-                            <h3 class="experiences__h3">Web Designer 2015 Oct - 2017 Jan</h3>
+                            <h3 class="experiences__h3">Web Designer <span class="experiences__span">2015 Oct - 2017 Jan</span></h3>
                             <p class="experiences__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="test">
                     <div class="education">
                         <h2 class="education__h2">My Education</h2>
                         <p class="education__p">In curcus orci non ipsum gravida dignissim</p>
@@ -126,7 +139,7 @@
                         <div class="education__block">
                             <i class="education__icon fas fa-laptop fa-2x"></i>
                             <div class="education__text">
-                                <h3 class="education__h3">Master in Design 2012 Jan - 2014 May</h3>
+                                <h3 class="education__h3">Master in Design <span class="education__span">2012 Jan - 2014 May</span></h3>
                                 <p class="education__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                     Deserunt modi illum veritatis aliquid magnam quia facere aspernatur.</p>
                             </div>
@@ -135,7 +148,7 @@
                         <div class="education__block">
                             <i class="education__icon fas fa-laptop fa-2x"></i>
                             <div class="education__text">
-                                <h3 class="education__h3">Bachelor of Arts 2008 May - 2011 Dec</h3>
+                                <h3 class="education__h3">Bachelor of Arts <span class="education__span">2008 May - 2011 Dec</span></h3>
                                 <p class="education__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                     Sunt quisquam natus maxime!</p>
                             </div>
@@ -154,7 +167,7 @@
                     </div>
                 </section>
 
-                <section class="section">
+                <section class="section" id="contact">
                     <div class="form">
                         <h2 class="form__h2">Say hello..</h2>
                         <p class="form__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 

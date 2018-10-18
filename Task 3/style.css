@@ -1,3 +1,9 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -5,6 +11,12 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(224, 214, 214);
+    font-family: 'Krub', sans-serif;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 28px;
 }
 
 .header {
@@ -16,14 +28,39 @@ body {
     height: 100vh;
     flex-direction: row;
     margin: auto;
+    position: relative;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 75%;
     position: absolute;
     margin-top: 25px;
+}
+
+.nav__logo-a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #000;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+.nav__menu {
+    text-transform: uppercase;
+}
+
+.nav__item {
+    text-decoration: none;
+    color: rgb(126, 124, 124);
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.nav__item_active {
+    color: #e29a5a;
 }
 
 .header-image {
@@ -38,20 +75,44 @@ body {
 .header-content {
     display: flex;
     flex-basis: 50%;
+    justify-content: center;
     flex-direction: column;
-    padding: 15% 50px 0;
+    padding: 0 40px;
     box-sizing: border-box;
+}
+
+.header-content__h1 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(82, 78, 78);
+}
+
+.header-content__span {
+    font-weight: bold;
+}
+
+.header-content__p {
+    font-size: 11px;
+    color: rgb(126, 124, 124);
+    line-height: 22px;
+}
+
+.header-content__p_upper {
+    text-transform: uppercase;
+    font-weight: medium;
 }
 
 .header-conent__button {
     display: flex;
     text-transform: uppercase;
-    color: #000;
-    width: 140px;
-    border: 2px solid #000;
+    color: rgb(41, 39, 39);;
+    width: 115px;
+    border: 2px solid rgb(41, 39, 39);
     border-radius: 30px;
+    margin-top: 20px;
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     background-color: transparent;
     cursor: pointer;
@@ -76,6 +137,27 @@ body {
     flex-basis: 50%;
     flex-direction: column;
     background-color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.donec__h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: rgb(82, 78, 78);
+}
+
+.donec__p {
+    font-size: 11px;
+    color: rgb(126, 124, 124);
+    margin-bottom: 0;
+    line-height: 22px;
+}
+
+.donec__p_accent {
+    color: #e29a5a;
+    margin-bottom: 20px;
 }
 
 .main__img1 {
@@ -91,12 +173,69 @@ body {
 .skills {
     display: flex;
     flex-basis: 25%;
-    background-color: #e67e22;
+    background-color: #e29a5a;
     flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.skills__h2 {
+    margin: 0;
 }
 
 .skills__stack {
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.skills__progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+.skills__progress-wrap {
     display: flex;
+    flex-direction: column;
+}
+
+.skills__progress-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgb(27, 26, 26);
+    font-weight: bold;
+}
+
+.skills__progress-item {
+    margin-bottom: 8px;
+}
+
+.skills__progress-value {
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.skills__progress::progress-bar {
+    background-color: #fff;
+}
+
+.skills__progress::-webkit-progress-bar {
+    background-color: #fff;
+}
+
+.skills__progress::-moz-progress-bar {
+    background-color: #fff;
+}
+
+.skills__progress::-webkit-progress-value {
+    background-color: rgb(27, 26, 26);
 }
 
 .stack-block {
@@ -105,25 +244,36 @@ body {
     flex-direction: column;
     text-align: center;
     min-height: 292px;
-    color: #000;
+    color: rgb(82, 78, 78);
     flex-basis: 25%;
     padding: 0 20px;
     background-color: #fff;
 }
 
 .stack-block_brown {
-    background-color: #e67e22; 
+    background-color: #e29a5a; 
     color: #fff;
 }
 
 .stack-block_red {
-    background-color: #e74c3c; 
+    background-color: #e7643c; 
     color: #fff;
 }
 
 .stack-block_black {
     background-color: rgb(32, 32, 32); 
     color: #fff;
+}
+
+.stack-block__h3 {
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.stack-block__p {
+    font-size: 13px;
+    line-height: 25px;
 }
 
 .experiences-img {
@@ -139,15 +289,43 @@ body {
     display: flex;
     flex-basis: 50%;
     justify-content: center;
-    background-color: #e74c3c;
+    background-color: #e7643c;
     color: #fff;
     flex-direction: column;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.experiences__h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.experiences__h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.experiences__icon {
+    margin-right: 20px;
+}
+
+.experiences__p {
+    font-size: 12px;
 }
 
 .experiences__block {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 18px;
+}
+
+.experiences__span {
+    color: rgb(82, 78, 78);
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .education-img {
@@ -156,21 +334,50 @@ body {
     background-image: url(img/education-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 320px;
 }
 
 .education {
     display: flex;
     flex-basis: 50%;
+
     justify-content: center;
-    background-color: #e67e22;
+    background-color: #e29a5a;
     color: #fff;
     flex-direction: column;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.education__h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.education__h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.education__icon {
+    margin-right: 20px;
+}
+
+.education__p {
+    font-size: 12px;
 }
 
 .education__block {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.education__span {
+    color: rgb(82, 78, 78);
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .large-block {
@@ -192,7 +399,7 @@ body {
     flex-direction: column;
     flex-basis: 50%;
     min-height: 292px;
-    background-color: #e74c3c;
+    background-color: #e7643c;
     color: #fff;
 }
 
@@ -204,7 +411,7 @@ body {
 .form__input, .form__textarea {
     background: transparent;
     border: none;
-    border-bottom: 2px solid rgb(207, 149, 40);
+    border-bottom: 2px solid #e29a5a;
     color: #fff;
 }
 
