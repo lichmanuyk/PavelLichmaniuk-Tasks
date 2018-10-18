@@ -340,7 +340,6 @@ h2 {
 .education {
     display: flex;
     flex-basis: 50%;
-
     justify-content: center;
     background-color: #e29a5a;
     color: #fff;
@@ -389,34 +388,74 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 20%;
-    min-height: 292px;
-    box-shadow:0 0 0 150px rgba(0, 0, 0, 0.33) inset;
-    color: #fff;
+    min-height: 350px;
+    box-shadow:0 0 0 175px rgba(0, 0, 0, 0.6) inset;
+    color: rgb(226, 223, 223);
+    padding: 0 20%;
+    box-sizing: border-box;
+}
+
+.large-block__h2 {
+    font-size: 24px;
+}
+
+.large-block__p {
+    font-size: 10px;
+    color: rgb(126, 124, 124);
+    font-weight: bold;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-basis: 50%;
     min-height: 292px;
     background-color: #e7643c;
-    color: #fff;
+    color: rgb(241, 238, 238);
+    padding: 30px 30px 50px;
+    box-sizing: border-box;
+}
+
+.form__h2 {
+    margin: 0;
+}
+
+.form__p {
+    font-size: 11px;
 }
 
 .form__form {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
 }
 
 .form__input, .form__textarea {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #e29a5a;
-    color: #fff;
+    border-bottom: 1px solid #e29a5a;
+    color: rgb(241, 238, 238);
+    margin-bottom: 20px;
+    outline: none;
 }
 
 .form__input::placeholder, .form__textarea::placeholder {
-    color: #fff;
+    color: rgb(241, 238, 238);
+}
+
+.form__submit {
+    background-color: rgb(247, 247, 247);
+    border: none;
+    width: 230px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: rgb(126, 124, 124);
 }
 
 .form-img {
@@ -433,7 +472,32 @@ h2 {
     flex-direction: column;
     flex-basis: 25%;
     background-color: rgb(32, 32, 32);
-    color: #fff;
+    color: rgb(126, 122, 122);
+    padding: 20px 35px 0;
+    box-sizing: border-box;
+}
+
+.contacts__h2 {
+    font-size: 20px;
+    color: rgb(226, 223, 223);
+}
+
+.contacts__p {
+    font-size: 11px;
+}
+
+.contacts__icon {
+    margin-right: 10px;
+}
+
+.contacts__phone {
+    font-size: 11px;
+}
+
+.contacts__a {
+    color: #e29a5a;
+    font-size: 11px;
+    text-decoration: none;
 }
 
 .footer {
@@ -445,5 +509,21 @@ h2 {
     min-height: 292px;
     text-align: center;
     background-color: #fff;
+    color: rgb(187, 179, 179);
+}
+
+.footer__p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer_a {
+    color: #e29a5a;
+    text-decoration: none;
+}
+
+.footer_soc-a {
+    color: rgb(187, 179, 179);
+    margin: 0 20px;
 }
 
