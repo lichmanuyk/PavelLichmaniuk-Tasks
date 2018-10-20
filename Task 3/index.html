@@ -14,196 +14,197 @@
     
 </head>
 <body>
-
-    <header class="header" id="home">
-        <nav class="nav">
-            <div class="nav__logo"><a class="nav__logo-a" href="/">Stimulus</a></div>
-            <div class="nav__menu">
-                <a class="nav__item nav__item_active" href="#home">Home</a>
-                <a class="nav__item" href="#about">About me</a>
-                <a class="nav__item" href="#experiences">Experiences</a>
-                <a class="nav__item" href="#test">Testimonial</a>
-                <a class="nav__item" href="#contact">Contact</a>
-            </div>
-        </nav>
-
-        <div class="header-image"></div>
-        <div class="header-content">
-            <p class="header-content__p header-content__p_upper">Welcome to my website</p>
-            <h1 class="header-content__h1">Hello, I am <span class="header-content__span">Stimulus</span> currently based in New York city.</h1>
-            <p class="header-content__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Consequuntur molestiae omnis laboriosam sed at illum voluptatum dolorum placeat, repellat illo officia. 
-                Porro dolorum harum doloribus maiores ea saepe nisi reprehenderit?</p>
-            <a class="header-content__a-button" href=""><button class="header-conent__button">Get started</button></a>
-        </div>
-
-    </header>
-
-
-    <main class="main">
-
-        <section class="section" id="about">
-            <div class="donec">
-                <h2 class="donec__h2">Donec auctor</h2>
-                <p class="donec__p donec__p_accent">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p class="donec__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nesciunt rem ullam illo pariatur officiis nisi cupiditate. Vitae eum excepturi rerum!</p>
-                <p class="donec__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nesciunt rem ullam illo pariatur officiis nisi cupiditate. Vitae eum excepturi rerum!</p>
-            </div>
-            <div class="main__img1"></div>
-            <div class="skills">
-                <h2 class="skills__h2">My Skills</h2>
-                <p class="skills__stack">Photoshop . HTML CSS JS . Web Design</p>
-                <div class="skills__progress-wrap">
-                    <div class="skills__progress-values">
-                        <p class="skills__progress-item">Frontend Design</p>
-                        <p class="skills__progress-value">90%</p>
-                    </div>
-                   <progress class="skills__progress" value="90" max="100"></progress> 
+    <div class="layout">
+        <header class="header layout-header" id="home">
+            <nav class="nav header__nav">
+                <div class="nav__logo"><a class="nav__logo-inner" href="#">Stimulus</a></div>
+                <div class="nav__menu">
+                    <a class="nav__item nav__item_active" href="#home">Home</a>
+                    <a class="nav__item" href="#about">About me</a>
+                    <a class="nav__item" href="#experiences">Experiences</a>
+                    <a class="nav__item" href="#test">Testimonial</a>
+                    <a class="nav__item" href="#contact">Contact</a>
                 </div>
-                <div class="skills__progress-wrap">
-                    <div class="skills__progress-values">
-                        <p class="skills__progress-item">Backend Processing</p>
-                        <p class="skills__progress-value">70%</p>
-                    </div>
-                    <progress class="skills__progress" value="70" max="100"></progress> 
-                </div>
-                <div class="skills__progress-wrap">
-                    <div class="skills__progress-values">
-                        <p class="skills__progress-item">HTML5 & CSS3</p>
-                        <p class="skills__progress-value">80%</p>
-                    </div>
-                    <progress class="skills__progress" value="80" max="100"></progress> 
-                </div>
-            </div>
-        </section>
-
-        
-
-        <section class="section">
-            <div class="stack-block stack-block_brown">
-                <i class="stack-block__icon fas fa-desktop fa-2x"></i>
-                <h3 class="stack-block__h3">Interface Design</h3>
-                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Error inventore vel temporibus veniam?</p>
-            </div>
-            <div class="stack-block stack-block_red">
-                <i class="stack-block__icon fab fa-telegram-plane fa-2x"></i>
-                <h3 class="stack-block__h3">Media Strategy</h3>
-                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Error inventore vel temporibus veniam?</p>
-            </div>
-            <div class="stack-block stack-block_black">
-                <i class="stack-block__icon fas fa-table fa-2x"></i>
-                <h3 class="stack-block__h3">Mobile App</h3>
-                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Error inventore vel temporibus veniam?</p>
-            </div>
-            <div class="stack-block">
-                <i class="stack-block__icon fab fa-html5 fa-2x"></i>
-                <h3 class="stack-block__h3">Coding</h3>
-                <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Error inventore vel temporibus veniam?</p>
-            </div>
-        </section>
-
-        <section class="section" id="experiences">
-                <div class="experiences-img"></div>
-                <div class="experiences">
-                    <h2 class="experiences__h2">My Experiences</h2>
-                    <p class="experiences__p">Previous companies and my tasks</p>
+            </nav>
     
-                    <div class="experiences__block">
-                        <i class="experiences__icon fas fa-laptop fa-lg"></i>
-                        <div class="experiences__text">
-                            <h3 class="experiences__h3">Graphic Designer <span class="experiences__span">2014 Jul - 2015 Sep</span></h3>
-                            <p class="experiences__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
+            <div class="header-image"></div>
+            <div class="content header-content">
+                <p class="content__text content__text_upper">Welcome to my website</p>
+                <h1 class="content__title">Hello, I am <span class="content__title_accent">Stimulus</span> currently based in New York city.</h1>
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur molestiae omnis laboriosam sed at illum voluptatum dolorum placeat, repellat illo officia. 
+                    Porro dolorum harum doloribus maiores ea saepe nisi reprehenderit?</p>
+                <a class="button content__button" href="#"><button class="button__inner">Get started</button></a>
+            </div>
     
-                    <div class="experiences__block">
-                        <i class="experiences__icon fas fa-laptop fa-lg"></i>
-                        <div class="experiences__text">
-                            <h3 class="experiences__h3">Web Designer <span class="experiences__span">2015 Oct - 2017 Jan</span></h3>
-                            <p class="experiences__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </header>
+    
+    
+        <main class="main layout__main">
+    
+            <section class="section main__section" id="about">
+                <div class="donec">
+                    <h2 class="donec__h2 h2">Donec auctor</h2>
+                    <p class="donec__p donec__p_accent">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p class="donec__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nesciunt rem ullam illo pariatur officiis nisi cupiditate. Vitae eum excepturi rerum!</p>
+                    <p class="donec__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nesciunt rem ullam illo pariatur officiis nisi cupiditate. Vitae eum excepturi rerum!</p>
+                </div>
+                <div class="main__img1"></div>
+                <div class="skills">
+                    <h2 class="skills__h2 h2">My Skills</h2>
+                    <p class="skills__stack">Photoshop . HTML CSS JS . Web Design</p>
+                    <div class="skills__progress-wrap">
+                        <div class="skills__progress-values">
+                            <p class="skills__progress-item">Frontend Design</p>
+                            <p class="skills__progress-value">90%</p>
                         </div>
+                       <progress class="skills__progress" value="90" max="100"></progress> 
+                    </div>
+                    <div class="skills__progress-wrap">
+                        <div class="skills__progress-values">
+                            <p class="skills__progress-item">Backend Processing</p>
+                            <p class="skills__progress-value">70%</p>
+                        </div>
+                        <progress class="skills__progress" value="70" max="100"></progress> 
+                    </div>
+                    <div class="skills__progress-wrap">
+                        <div class="skills__progress-values">
+                            <p class="skills__progress-item">HTML5 & CSS3</p>
+                            <p class="skills__progress-value">80%</p>
+                        </div>
+                        <progress class="skills__progress" value="80" max="100"></progress> 
                     </div>
                 </div>
             </section>
-
-            <section class="section" id="test">
-                    <div class="education">
-                        <h2 class="education__h2">My Education</h2>
-                        <p class="education__p">In curcus orci non ipsum gravida dignissim</p>
+    
+            
+    
+            <section class="section">
+                <div class="stack-block stack-block_brown">
+                    <i class="stack-block__icon fas fa-desktop fa-2x"></i>
+                    <h3 class="stack-block__h3">Interface Design</h3>
+                    <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Error inventore vel temporibus veniam?</p>
+                </div>
+                <div class="stack-block stack-block_red">
+                    <i class="stack-block__icon fab fa-telegram-plane fa-2x"></i>
+                    <h3 class="stack-block__h3">Media Strategy</h3>
+                    <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Error inventore vel temporibus veniam?</p>
+                </div>
+                <div class="stack-block stack-block_black">
+                    <i class="stack-block__icon fas fa-table fa-2x"></i>
+                    <h3 class="stack-block__h3">Mobile App</h3>
+                    <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Error inventore vel temporibus veniam?</p>
+                </div>
+                <div class="stack-block">
+                    <i class="stack-block__icon fab fa-html5 fa-2x"></i>
+                    <h3 class="stack-block__h3">Coding</h3>
+                    <p class="stack-block__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Error inventore vel temporibus veniam?</p>
+                </div>
+            </section>
+    
+            <section class="section" id="experiences">
+                    <div class="experiences-img"></div>
+                    <div class="experiences">
+                        <h2 class="experiences__h2 h2">My Experiences</h2>
+                        <p class="experiences__p">Previous companies and my tasks</p>
         
-                        <div class="education__block">
-                            <i class="education__icon fas fa-laptop fa-2x"></i>
-                            <div class="education__text">
-                                <h3 class="education__h3">Master in Design <span class="education__span">2012 Jan - 2014 May</span></h3>
-                                <p class="education__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Deserunt modi illum veritatis aliquid magnam quia facere aspernatur.</p>
+                        <div class="experiences__block">
+                            <i class="experiences__icon fas fa-laptop fa-lg"></i>
+                            <div class="experiences__text">
+                                <h3 class="experiences__h3">Graphic Designer <span class="experiences__span">2014 Jul - 2015 Sep</span></h3>
+                                <p class="experiences__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
         
-                        <div class="education__block">
-                            <i class="education__icon fas fa-laptop fa-2x"></i>
-                            <div class="education__text">
-                                <h3 class="education__h3">Bachelor of Arts <span class="education__span">2008 May - 2011 Dec</span></h3>
-                                <p class="education__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Sunt quisquam natus maxime!</p>
+                        <div class="experiences__block">
+                            <i class="experiences__icon fas fa-laptop fa-lg"></i>
+                            <div class="experiences__text">
+                                <h3 class="experiences__h3">Web Designer <span class="experiences__span">2015 Oct - 2017 Jan</span></h3>
+                                <p class="experiences__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="education-img"></div>
                 </section>
-
-                <section class="section">
-                    <div class="large-block">
-                        <i class="fa fa-star fa-2x"></i>
-                        <h2 class="large-block__h2">Lorem ipsum dolor sit amet adipisicing elit. 
-                            Inventore reiciendis officia, minus quam modi cum tenetur?</h2>
-                        <p class="large-block__p">Lorem ipsum dolor, sit amet adipisicing elit. 
-                            Consequatur sapiente repellat praesentium.</p>
-                    </div>
-                </section>
-
-                <section class="section" id="contact">
-                    <div class="form">
-                        <h2 class="form__h2">Say hello..</h2>
-                        <p class="form__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Aut, tenetur molestias!</p>
-                        <form class="form__form" method="POST">
-                            <input class="form__input" type="text" name="name" placeholder="Your Name" required>
-                            <input class="form__input" type="email" name="email" placeholder="Your Email" required>
-                            <textarea class="form__textarea" type="text" name="msg" cols="30" rows="10" placeholder="Write your message..." required></textarea>
-                            <button class="form__submit" type="submit">Send</button>
-                        </form>
-                    </div>
-                    <div class="form-img"></div>
-                    <div class="contacts">
-                        <h2 class="contacts__h2">Visit my office</h2>
-                        <p class="contacts__p">456 New Street 22000, New York City, USA</p>
-
-                        <h2 class="contacts__h2">Contact.</h2>
-                        <p class="contacts__phone"><i class="contacts__icon fa fa-phone fa-lg"></i><a class="contacts__a" href="tel:01-0110-0220">01-0110-0220</a></p>
-                        <p class="contacts__email"><i class="contacts__icon far fa-envelope"></i><a class="contacts__a" href="mailto:hello@company.com">hello@company.com</a></p>
-                        <p class="contacts__phone"><i class="contacts__icon fas fa-globe-americas fa-lg"></i><a class="contacts__a" href="https://company.co" target="_blank">company.co</a></p>
-                    </div>
-                </section>
-        
-    </main>
-
-    <footer class="footer">
-        <p class="footer__p">Copyright &copy; 2016 Your Company | Design: <a class="footer_a" href="https://templatemo.com" target="_blank">templatemo</a></p>
-        <p class="footer_soc">
-            <a class="footer_soc-a" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a class="footer_soc-a" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a class="footer_soc-a" href="https://google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-            <a class="footer_soc-a" href="https://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
-            <a class="footer_soc-a" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </p>
-    </footer>
-
+    
+                <section class="section" id="test">
+                        <div class="education">
+                            <h2 class="education__h2 h2">My Education</h2>
+                            <p class="education__p">In curcus orci non ipsum gravida dignissim</p>
+            
+                            <div class="education__block">
+                                <i class="education__icon fas fa-laptop fa-2x"></i>
+                                <div class="education__text">
+                                    <h3 class="education__h3">Master in Design <span class="education__span">2012 Jan - 2014 May</span></h3>
+                                    <p class="education__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Deserunt modi illum veritatis aliquid magnam quia facere aspernatur.</p>
+                                </div>
+                            </div>
+            
+                            <div class="education__block">
+                                <i class="education__icon fas fa-laptop fa-2x"></i>
+                                <div class="education__text">
+                                    <h3 class="education__h3">Bachelor of Arts <span class="education__span">2008 May - 2011 Dec</span></h3>
+                                    <p class="education__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        Sunt quisquam natus maxime!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-img"></div>
+                    </section>
+    
+                    <section class="section">
+                        <div class="large-block">
+                            <i class="fa fa-star fa-2x"></i>
+                            <h2 class="large-block__h2 h2">Lorem ipsum dolor sit amet adipisicing elit. 
+                                Inventore reiciendis officia, minus quam modi cum tenetur?</h2>
+                            <p class="large-block__p">Lorem ipsum dolor, sit amet adipisicing elit. 
+                                Consequatur sapiente repellat praesentium.</p>
+                        </div>
+                    </section>
+    
+                    <section class="section" id="contact">
+                        <div class="form">
+                            <h2 class="form__h2 h2">Say hello..</h2>
+                            <p class="form__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Aut, tenetur molestias!</p>
+                            <form class="form__form" method="POST">
+                                <input class="form__input" type="text" name="name" placeholder="Your Name" required>
+                                <input class="form__input" type="email" name="email" placeholder="Your Email" required>
+                                <textarea class="form__textarea" type="text" name="msg" cols="30" rows="10" placeholder="Write your message..." required></textarea>
+                                <button class="form__submit" type="submit">Send</button>
+                            </form>
+                        </div>
+                        <div class="form-img"></div>
+                        <div class="contacts">
+                            <h2 class="contacts__h2 h2">Visit my office</h2>
+                            <p class="contacts__p">456 New Street 22000, New York City, USA</p>
+    
+                            <h2 class="contacts__h2 h2">Contact.</h2>
+                            <p class="contacts__phone"><i class="contacts__icon fa fa-phone fa-lg"></i><a class="contacts__a" href="tel:01-0110-0220">01-0110-0220</a></p>
+                            <p class="contacts__email"><i class="contacts__icon far fa-envelope"></i><a class="contacts__a" href="mailto:hello@company.com">hello@company.com</a></p>
+                            <p class="contacts__phone"><i class="contacts__icon fas fa-globe-americas fa-lg"></i><a class="contacts__a" href="https://company.co" target="_blank">company.co</a></p>
+                        </div>
+                    </section>
+            
+        </main>
+    
+        <footer class="footer layout__footer">
+            <p class="footer__p">Copyright &copy; 2016 Your Company | Design: <a class="footer_a" href="https://templatemo.com" target="_blank">templatemo</a></p>
+            <p class="footer_soc">
+                <a class="footer_soc-a" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer_soc-a" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="footer_soc-a" href="https://google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                <a class="footer_soc-a" href="https://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+                <a class="footer_soc-a" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+        </footer>
+    </div>
+    
 </body>
 </html>

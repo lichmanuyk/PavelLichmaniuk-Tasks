@@ -14,24 +14,26 @@ body {
     font-family: 'Krub', sans-serif;
 }
 
-h2 {
+.h2 {
     font-weight: normal;
     font-size: 28px;
 }
 
-.header {
-    width: 1170px;
-    height: 100px;
-    background-color: #ebd2e4;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: row;
+.layout-header {
+    max-width: 1400px;
+    min-height: 600px;
     margin: auto;
     position: relative;
 }
 
-.nav {
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #ebd2e4;
+    justify-content: center;
+}
+
+.header__nav {
     display: flex;
     justify-content: space-between;
     width: 75%;
@@ -39,7 +41,7 @@ h2 {
     margin-top: 25px;
 }
 
-.nav__logo-a {
+.nav__logo-inner {
     text-decoration: none;
     font-size: 19px;
     color: #000;
@@ -109,41 +111,44 @@ h2 {
 }
 
 .header-content {
-    display: flex;
     flex-basis: 50%;
+}
+
+.content {
+    display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
-.header-content__h1 {
+.content__title {
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 0;
     color: rgb(82, 78, 78);
 }
 
-.header-content__span {
+.content__title_accent {
     font-weight: bold;
 }
 
-.header-content__p {
+.content__text {
     font-size: 11px;
     color: rgb(126, 124, 124);
     line-height: 22px;
 }
 
-.header-content__p_upper {
+.content__text_upper {
     text-transform: uppercase;
     font-weight: medium;
 }
 
-.header-content__a-button {
+.button {
     text-decoration: none;
 }
 
-.header-conent__button {
+.button__inner {
     display: flex;
     text-transform: uppercase;
     color: rgb(41, 39, 39);;
@@ -160,17 +165,20 @@ h2 {
     transition: .25s linear;
 }
 
-.header-conent__button:hover {
+.button__inner:hover {
     background-color: #e29a5a;
     color: #fff;
     border: 2px solid  rgb(73, 72, 72);
 }
 
+.layout__main {
+    max-width: 1400px;
+    margin: auto;
+}
+
 .main {
     display: flex;
-    width: 1170px;
     justify-content: center;
-    margin: auto;
     flex-direction: column;
 }
 
@@ -575,13 +583,17 @@ h2 {
     transform: scaleX(1);
   }
 
-.footer {
+.layout__footer {
     display: flex;
-    width: 1170px;
-    justify-content: center;
+    max-width: 1400px;
     margin: auto;
-    flex-direction: column;
     min-height: 292px;
+    max-height: 500px;
+}
+
+.footer {
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     background-color: #fff;
     color: rgb(187, 179, 179);
