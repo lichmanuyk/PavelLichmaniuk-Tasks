@@ -1,0 +1,22 @@
+.experiences {
+    display: flex;
+    justify-content: center;
+    background-color: #e7643c;
+    color: #fff;
+    flex-direction: column;
+    padding: 35px 40px;
+    box-sizing: border-box;
+}
+
+.experiences_theme_sun {
+    background-color: #e29a5a;
+}
+
+.experiences__title {
+    margin: 0;
+    font-weight: normal;
+}
+
+.experiences__text {
+    font-size: 12px;
+}

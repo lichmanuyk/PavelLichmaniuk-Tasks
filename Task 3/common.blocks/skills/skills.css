@@ -1,0 +1,19 @@
+.skills {
+    display: flex;
+    background-color: #e29a5a;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+.skills__title {
+    margin: 0;
+}
+
+.skills__stack {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+

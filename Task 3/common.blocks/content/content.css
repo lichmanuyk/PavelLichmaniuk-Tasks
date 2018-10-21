@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 40px;
+    box-sizing: border-box
+}
+
+.content__title {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(82, 78, 78);
+}
+
+.content__title_accent {
+    font-weight: bold;
+}
+
+.content__text {
+    font-size: 12px;
+    color: rgb(126, 124, 124);
+    line-height: 22px;
+}
+
+.content__text_upper {
+    text-transform: uppercase;
+    font-weight: medium;
+}

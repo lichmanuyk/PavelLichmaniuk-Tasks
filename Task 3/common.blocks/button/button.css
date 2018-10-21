@@ -1,0 +1,27 @@
+.button {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button__inner {
+    text-transform: uppercase;
+    color: rgb(41, 39, 39);;
+    width: 150px;
+    border: 3px solid rgb(41, 39, 39);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 13px 25px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: .25s linear;
+}
+
+.button__inner:hover {
+    background-color: #e29a5a;
+    color: #fff;
+    border: 2px solid  rgb(73, 72, 72);
+}

@@ -1,0 +1,89 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-donec {
+    flex-basis: 50%;
+}
+
+.section__flex {
+    flex-basis: 50%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.section__skills-img {
+    flex-basis: 50%;
+    min-height: 320px;
+}
+
+.skills-img {
+    display: flex;
+    background-image: url(../../img/about-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section__skills {
+    flex-basis: 50%;
+}
+
+.section__stack {
+    min-height: 300px;
+    flex-basis: 50%;
+}
+
+.section__experiences-img {
+    display: flex;
+    flex-basis: 50%;
+    min-height: 310px;
+    background-image: url(../../img/experience-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__experiences {
+    flex-basis: 50%;
+}
+
+.education-img {
+    display: flex;
+    flex-basis: 50%;
+    min-height: 340px;
+    background-image: url(../../img/education-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__easy {
+    min-height: 350px;
+}
+
+.section__form-layout {
+    flex-basis: 50%;
+}
+
+.section__form-img {
+    display: flex;
+    min-height: 310px;
+    flex-basis: 50%;
+    background-image: url(../../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section__contacts {
+    flex-basis: 50%;
+}

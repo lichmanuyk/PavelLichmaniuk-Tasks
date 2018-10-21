@@ -1,0 +1,26 @@
+.donec {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.donec__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: rgb(82, 78, 78);
+}
+
+.donec__text {
+    font-size: 13px;
+    color: rgb(126, 124, 124);
+    margin-bottom: 0;
+    line-height: 22px;
+}
+
+.donec__text_accent {
+    color: #e29a5a;
+    margin-bottom: 20px;
+}

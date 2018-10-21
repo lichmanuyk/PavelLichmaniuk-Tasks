@@ -1,0 +1,177 @@
+@media only screen and (max-width: 1150px)  {
+    .header__nav {
+        width: 95%;
+    }
+
+    .nav__logo {
+        margin-left: 10%;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 914px)  {
+    .header__nav {
+        width: 95%;
+    }
+
+    .nav__item {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 992px)  {
+    .header-image {
+        min-height: 500px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 769px)  {
+    .nav__checkbox {
+        display: none;
+    }
+
+    .nav__burger {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px)  {
+    .header__nav {
+        top: 5px;
+    }
+    
+    .nav__menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(235, 235, 235, .95);
+        border-radius: 5px;
+        right: -5px;
+        top: -5px;
+    }
+
+    .nav__item {
+        font-size: 16px;
+        padding: 10px 15px;
+        padding-right: 40px;
+    }
+
+    .nav__item:not(:last-child) {
+        border-bottom: 1px solid rgba(82, 78, 78,.4);
+    }
+
+    .nav__item:hover::before {
+        visibility: hidden;
+      }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .header-image {
+        background-position-x: 60%;
+    }
+
+    .content {
+        padding: 50px 40px;
+    }
+
+    .easy {
+        padding: 50px 10%;
+    }
+    
+    .easy__title {
+        font-size: 24px;
+    }
+
+    .layout__footer {
+        min-height: 150px;
+        max-height: 500px;
+    }
+    
+    .footer__text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px)  {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-image {
+        min-height: 300px;
+        background-position-x: 29%;
+        
+    }
+
+    .section__flex {
+        flex-basis: 50%;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {
+        border-bottom: 2px solid #fff;
+    }
+
+    .section__easy {
+        min-height: 250px;
+    }
+    
+    .easy__title {
+        font-size: 20px;
+    }
+    
+    .section__form-img {
+        min-height: 250px;
+        background-position-y: 15%;
+    }
+    
+    .contacts {
+        text-align: center;
+    }
+
+    .footer__text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .footer_soc {
+        font-size: 15px;
+        margin: 0 15px;
+    }
+}

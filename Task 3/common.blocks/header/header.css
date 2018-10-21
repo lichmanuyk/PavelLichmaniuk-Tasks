@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #ebd2e4;
+    justify-content: center;
+    position: relative;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    position: absolute;
+    margin-top: 25px;
+    top: 0;
+}
+
+
+.header-image {
+    display: flex;
+    flex-basis: 50%;
+    background-image: url(../../img/home-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 700px;
+}
+
+.header-content {
+    flex-basis: 50%;
+}

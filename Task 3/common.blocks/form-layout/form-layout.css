@@ -1,0 +1,21 @@
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e7643c;
+    color: rgb(241, 238, 238);
+    padding: 30px 30px 50px;
+    box-sizing: border-box;
+}
+
+.form-layout__title {
+    margin: 0;
+}
+
+.form-layout__text {
+    font-size: 12px;
+}
+
+.form-layout__form {
+    margin-top: 35px;
+}

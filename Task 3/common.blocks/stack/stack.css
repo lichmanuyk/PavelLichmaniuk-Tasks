@@ -1,0 +1,35 @@
+.stack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(82, 78, 78);
+    padding: 0px 20px;
+    background-color: #fff;
+}
+
+.stack_brown {
+    background-color: #e29a5a; 
+    color: #fff;
+}
+
+.stack_red {
+    background-color: #e7643c; 
+    color: #fff;
+}
+
+.stack_black {
+    background-color: rgb(32, 32, 32); 
+    color: #fff;
+}
+
+.stack__title {
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.stack__text {
+    font-size: 15px;
+    line-height: 25px;
+}
