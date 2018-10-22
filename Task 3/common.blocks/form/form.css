@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.form__input, .form__textarea {
+.settext {
     background: transparent;
     border: none;
     font-size: 15px;
@@ -13,7 +13,7 @@
     outline: none;
 }
 
-.form__input::placeholder, .form__textarea::placeholder {
+.settext::placeholder {
     color: rgb(241, 238, 238);
 }
 

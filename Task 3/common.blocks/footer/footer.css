@@ -9,16 +9,15 @@
 .footer__text {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 50px;
 }
 
-.footer_link {
+.footer__link {
     color: #e29a5a;
     text-decoration: none;
     position: relative;
 }
 
-.footer_link::before {
+.footer__link::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -33,18 +32,18 @@
     transition: .25s linear;
 }
 
-.footer_link:hover::before {
+.footer__link:hover::before {
     visibility: visible;
     transform: scaleX(1);
   }
 
-.footer_soc {
+.footer__soc {
     color: rgb(187, 179, 179);
     font-size: 15px;
     margin: 0 20px;
     transition: .25s linear;
 }
 
-.footer_soc:hover {
+.footer__soc:hover {
     color: #e29a5a;
 }

@@ -8,11 +8,6 @@
     }
 }
 
-
-
-
-
-
 @media only screen and (max-width: 914px)  {
     .header__nav {
         width: 95%;
@@ -24,21 +19,11 @@
     }
 }
 
-
-
-
-
-
 @media only screen and (max-width: 992px)  {
-    .header-image {
+    .header__image {
         min-height: 500px;
     }
 }
-
-
-
-
-
 
 @media only screen and (min-width: 769px)  {
     .nav__checkbox {
@@ -49,14 +34,6 @@
         display: none;
     }
 }
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 768px)  {
     .header__nav {
@@ -91,7 +68,7 @@
         flex-direction: column;
     }
 
-    .header-image {
+    .header__image {
         background-position-x: 60%;
     }
 
@@ -118,21 +95,14 @@
     }
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 576px)  {
     .header {
         flex-direction: column;
     }
 
-    .header-image {
+    .header__image {
         min-height: 300px;
         background-position-x: 29%;
-        
     }
 
     .section__flex {

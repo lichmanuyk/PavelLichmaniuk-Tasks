@@ -16,7 +16,7 @@
 }
 
 
-.header-image {
+.header__image {
     display: flex;
     flex-basis: 50%;
     background-image: url(../../img/home-img.jpg);
@@ -26,6 +26,6 @@
     min-height: 700px;
 }
 
-.header-content {
+.header__content {
     flex-basis: 50%;
 }
