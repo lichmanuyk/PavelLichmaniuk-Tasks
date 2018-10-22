@@ -14,11 +14,15 @@
 }
 
 .easy__title {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .easy__text {
-    font-size: 13px;
+    font-size: 1.3rem;
     color: rgb(126, 124, 124);
     font-weight: bold;
+}
+
+.easy__icon {
+    font-size: 3.2rem;
 }

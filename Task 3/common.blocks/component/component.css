@@ -5,18 +5,19 @@
 }
 
 .component__text-title {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: normal;
     margin-bottom: 0;
 }
 
 .component__icon {
     margin-right: 20px;
+    font-size: 3.2rem;
 }
 
 .component__span {
     color: rgb(82, 78, 78);
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -25,5 +26,5 @@
 }
 
 .component__text {
-    font-size: 12px;
+    font-size: 1.2rem;
 }

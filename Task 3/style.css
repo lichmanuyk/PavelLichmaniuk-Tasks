@@ -2,6 +2,7 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-size: 10px;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 .h2 {
     font-weight: normal;
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 .layout-header {

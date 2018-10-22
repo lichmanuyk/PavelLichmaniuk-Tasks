@@ -6,7 +6,7 @@
 .settext {
     background: transparent;
     border: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     border-bottom: 1px solid #e29a5a;
     color: rgb(241, 238, 238);
     margin-bottom: 30px;
@@ -24,7 +24,7 @@
     border-radius: 30px;
     padding: 12px 20px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     outline: none;

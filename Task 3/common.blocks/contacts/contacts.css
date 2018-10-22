@@ -8,25 +8,26 @@
 }
 
 .contacts__title {
-    font-size: 20px;
+    font-size: 2rem;
     color: rgb(226, 223, 223);
 }
 
 .contacts__text {
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .contacts__icon {
     margin-right: 10px;
+    font-size: 1.6rem;
 }
 
 .contacts__phone {
-    font-size: 11px;
+    font-size: 1.1rem;
 }
 
 .contacts__link {
     color: #e29a5a;
-    font-size: 13px;
+    font-size: 1.3rem;
     text-decoration: none;
     position: relative;
 }
