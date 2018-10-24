@@ -49,11 +49,21 @@ body {
 }
 
 .sprite-layout {
+    display: flex;
     transform: rotate(-3deg);
     height: 300px;
     width: 1100px;
     margin-left: 10px;
     margin-top: -12px;
+}
+
+.left {
+    margin-right: 5px;
+}
+
+.center {
+    margin-top: 25px;
+    margin-right: 5px;
 }
 
 .sprite {
