@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="task">
+            <h2 class="task__title">1. Найти все простые числа до заданного n. 
+                    Простые числа - это те числа, которые делятся только на себя и на 1. 
+                    <br/>1 <= n 1 000 000 000</h2>
+            <label class="task__lbl" for="1">Введите значение n:</label>
+            <input type="text" id="1" class="task__set" value="10">
+            <button class="task__start" onclick="task1()">Решить задачу 1</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">2. Найти первые n простых чисел. 
+                    <br/>1 =< n <= 1000000</h2>
+            <label class="task__lbl" for="2">Введите значение n:</label>
+            <input type="text" id="2" class="task__set" value="10">
+            <button class="task__start" onclick="task2()">Решить задачу 2</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">3. Найти сумму первых n четных чисел фибоначчи. 
+                <br/>Числа фибоначчи - первые два числа равны 1 и 1, 
+                а каждое последующее число равно сумме двух предыдущих чисел. 
+                <br/>1 <= n <= 100000 </h2>
+            <label class="task__lbl" for="3">Введите значение n:</label>
+            <input type="text" id="3" class="task__set" value="5">
+            <button class="task__start" onclick="task3()">Решить задачу 3</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">4. Серия чисел, 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317 (^ - степень числа). 
+                    Найдите 10 последних цифр результата такой последовательности, для заданного n. 
+                    <br/>1 <= n <= 1000</h2>
+            <label class="task__lbl" for="1">Введите значение n:</label>
+            <input type="text" id="4" class="task__set" value="10">
+            <button class="task__start" onclick="task4()">Решить задачу 4</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">5. Найти среднее арифметическое чисел из массива.</h2>
+            <label class="task__lbl" for="1">Введите исходный массив:</label>
+            <input type="text" id="5" class="task__set" value="[1, 2, 3, 4, 5]">
+            <button class="task__start" onclick="task5()">Решить задачу 5</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">6. Найти максимальное число в массиве.</h2>
+            <label class="task__lbl" for="1">Введите исходный массив:</label>
+            <input type="text" id="6" class="task__set" value="[1, 2, 3, 4, 5]">
+            <button class="task__start" onclick="task6()">Решить задачу 6</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">7. Найдите все уникальные строки в массиве.</h2>
+            <label class="task__lbl" for="1">Введите исходный массив:</label>
+            <input type="text" id="7" class="task__set" value="[1, 'word', 1, 'word', 'word', 'word1']">
+            <button class="task__start" onclick="task7()">Решить задачу 7</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">8. Определить, является ли фраза/слово палиндромом</h2>
+            <label class="task__lbl" for="1">Введите фразу/слово:</label>
+            <input type="text" id="8" class="task__set" value="ДОХОД">
+            <button class="task__start" onclick="task8()">Решить задачу 8</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+        <div class="task">
+            <h2 class="task__title">9. Найти сумму цифр данного числа</h2>
+            <label class="task__lbl" for="1">Введите число:</label>
+            <input type="text" id="9" class="task__set" value="564674474">
+            <button class="task__start" onclick="task9()">Решить задачу 9</button>
+            <p class="task__result">&nbsp;</p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
