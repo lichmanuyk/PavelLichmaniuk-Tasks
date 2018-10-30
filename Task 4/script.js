@@ -35,7 +35,7 @@ function task1() {
         }
 
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + result;
-        console.log("1. Простые числа до " + n + " - " + result);
+        return result;
 
     };
 }
@@ -56,7 +56,7 @@ function task2() {
         }
 
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + result;
-        console.log("2.Первые " + n + " простых чисел - " + result);
+        return result;
         
         
         function isPrime(n) {
@@ -99,7 +99,7 @@ function task3() {
 
         
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + result;
-        console.log("3.Сумма первых " + n + " четных чисел фибоначчи - " + result);
+        return result;
     };
 }
 
@@ -121,7 +121,7 @@ function task4() {
 
         
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + result;
-        console.log("4.10 последних цифр последовательности для n = " + n + " равны - " + result);
+        return result;
     };
 }
 
@@ -143,7 +143,7 @@ function task5() {
         result /= arr.length;
 
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + result;
-        console.log("5.Среднее арифметическое чисел массива [" + arr + "] - " + result);
+        return result;
     };
 }
 
@@ -166,7 +166,7 @@ function task6() {
             }
         } 
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + result;
-        console.log("6.Максимальное число массива [" + arr + "] - " + result);
+        return result;
     };
 }
 
@@ -188,7 +188,7 @@ function task7() {
         }
         
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : [' + result + ']';
-        console.log("7.Массив с уникальными строками - [" + result + "]");
+        return result;
     };
 }
 
@@ -204,11 +204,10 @@ function task8() {
 
         if (result == phrase) {
             el.nextElementSibling.nextElementSibling.textContent = "Фраза \"" + phrase + "\"- является палиндромом";
-            console.log("8.Фраза \"" + phrase + "\"- палиндром");
-            return;
+            return true;
         }
         el.nextElementSibling.nextElementSibling.textContent = "Фраза \"" + phrase + "\"- не является палиндромом"; 
-        console.log("8.Фраза \"" + phrase + "\"- не палиндром");
+        return false;
     };
 }
 
@@ -227,6 +226,6 @@ function task9() {
         }
         
         el.nextElementSibling.nextElementSibling.textContent = 'Результат : ' + count;
-        console.log("9.Сумма цифр числа " + str + " - " + count);
+        return count;
     };
 }
