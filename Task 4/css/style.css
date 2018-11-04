@@ -79,4 +79,6 @@ body {
 .task__result {
     margin-top: 20px;
     margin-bottom: 5px;
+    word-wrap: break-word;
+    line-height: 27px;
 }
