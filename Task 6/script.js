@@ -225,7 +225,6 @@ class Calendar {
             var nextDay = today.getDate();
             today.setDate(++nextDay);
         }
-        
     }
 
     _getLastDayOfMonth() {
@@ -243,7 +242,7 @@ class Calendar {
     }
  
     _setActive() {
-        if (new Date().getMonth() === this._today.getMonth()) {
+        if (new Date().getMonth() === this._today.getMonth() && new Date().getFullYear() === this._today.getFullYear()) {
             var today = new Date().getDate();
             var newDate = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
             var x = today + newDate.getDay() - 2;
