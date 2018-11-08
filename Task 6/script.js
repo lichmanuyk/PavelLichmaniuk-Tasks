@@ -199,6 +199,7 @@ class Calendar {
         this._changeMonthTitle();
         this._setActive();
         this._fillCalendarDays(this._today);
+        
     }
 
     _refillCalendarDaysNext() {
@@ -214,11 +215,13 @@ class Calendar {
         var today = new Date(thisDay.getFullYear(), thisDay.getMonth(), thisDay.getDate());
         var firstMonthDay = new Date(today.getFullYear(), today.getMonth(), 1);
         this._weeksDay = firstMonthDay.getDay();
-        var iterCount =  this._getLastDayOfMonth().getDate() + this._weeksDay - 1;
+        var i = this._weeksDay -1;
+        i = i == -1 ? 6: i;
+        var iterCount =  this._getLastDayOfMonth().getDate() + firstMonthDay.getDate() + i - 1;
+        alert(this._getLastDayOfMonth().getDate());
 
         today.setUTCDate(0);
-
-        for (var i = this._weeksDay -1 ; i < iterCount; i++) {
+        for (; i < iterCount; i++) {
             var numOfDay = today.getDate();
             this._daysOverlayChilds[i].textContent = numOfDay;
             var nextDay = today.getDate();
@@ -228,8 +231,8 @@ class Calendar {
     }
 
     _getLastDayOfMonth() {
-        var month = new Date().getMonth();
-        var year = new Date().getFullYear();
+        var month = this._today.getMonth();
+        var year = this._today.getFullYear();
         var realMonth = ++month;
 
         return new Date(year, realMonth, 0);
