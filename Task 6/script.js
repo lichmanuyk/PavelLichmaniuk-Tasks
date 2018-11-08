@@ -62,7 +62,7 @@ class Calendar {
     _appendCalendarDays() {
         this._createCalendarDays();
 
-        for (var i = 0; i < 35; i++) {
+        for (var i = 0; i < 42; i++) {
             var nthDay = this._createDay();
             this._calendarDaysOverlay.appendChild(nthDay);
         }
@@ -78,7 +78,6 @@ class Calendar {
         flex-direction: row; \
         justify-content: space-between; \
         flex-wrap: wrap; \
-        height: 390px; \
         margin: 5px; \
         padding-top: 5px;\
         padding-bottom: 5px;';
@@ -89,6 +88,7 @@ class Calendar {
         nthDay.className = 'calendar__day';
         nthDay.style.cssText = 'display: flex; \
         width: 13%; \
+        height: 60px; \
         justify-content: center; \
         align-items: center; \
         border: 2px solid #837878; \
@@ -102,7 +102,6 @@ class Calendar {
             this.style.borderColor = '#837878';
             this.style.backgroundColor = 'transparent';
         };
-
         return nthDay;
     }
 
@@ -218,7 +217,6 @@ class Calendar {
         var i = this._weeksDay -1;
         i = i == -1 ? 6: i;
         var iterCount =  this._getLastDayOfMonth().getDate() + firstMonthDay.getDate() + i - 1;
-        alert(this._getLastDayOfMonth().getDate());
 
         today.setUTCDate(0);
         for (; i < iterCount; i++) {
@@ -239,7 +237,7 @@ class Calendar {
     }
 
     _clearDays() {
-        for (var i = 0 ; i < 35; i++) {
+        for (var i = 0 ; i < 42; i++) {
             this._daysOverlayChilds[i].textContent = '';
         }
     }
