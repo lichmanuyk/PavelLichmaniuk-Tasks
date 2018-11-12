@@ -17,6 +17,8 @@ class Calendar {
         margin: auto; \
         margin-top: 50px;';
         
+        calendar.style.userSelect = 'none';
+
         calendar.onclick = function(e) {
             console.dir(e.target.firstChild.data);
         };
@@ -283,44 +285,7 @@ class Calendar {
         var monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 
         'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
         var iter = this._today.getMonth();
-        switch (iter) {
-            case 0:
-            monthTitle = monthNames[0];
-            break;
-            case 1:
-            monthTitle = monthNames[1];
-            break;
-            case 2:
-            monthTitle = monthNames[2];
-            break;
-            case 3:
-            monthTitle = monthNames[3];
-            break;
-            case 4:
-            monthTitle = monthNames[4];
-            break;
-            case 5:
-            monthTitle = monthNames[5];
-            break;
-            case 6:
-            monthTitle = monthNames[6];
-            break;
-            case 7:
-            monthTitle = monthNames[7];
-            break;
-            case 8:
-            monthTitle = monthNames[8];
-            break;
-            case 9:
-            monthTitle = monthNames[9];
-            break;
-            case 10:
-            monthTitle = monthNames[10];
-            break;
-            case 11:
-            monthTitle = monthNames[11];
-            break;
-        }
+        monthTitle = monthNames[iter];
         return monthTitle + ' ' + this._today.getFullYear();
     }
 
@@ -348,5 +313,6 @@ class DataPicker extends Calendar {
 
     document.body.style.cssText = 'background-color: rgb(204, 200, 200); \
     color: #fff';
-    
+
+    document.body.style.userSelect = 'none';
 })();
