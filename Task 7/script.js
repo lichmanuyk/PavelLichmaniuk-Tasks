@@ -5,6 +5,7 @@ class Calendar {
         this._daysOverlayChilds;
         this._weeksDay;
         this._today = new Date();
+        this._dataPickerValue;
     }
    
 
@@ -19,9 +20,6 @@ class Calendar {
         
         calendar.style.userSelect = 'none';
 
-        calendar.onclick = function(e) {
-            console.dir(e.target.firstChild.data);
-        };
         calendar.appendChild(this._createCalendarHeader());
         calendar.appendChild(this._createCalendarWeekDays());
         calendar.appendChild(this._appendCalendarDays());
@@ -73,6 +71,8 @@ class Calendar {
         }
         this._fillCalendarDays(this._today);
 
+
+
         return this._calendarDaysOverlay;
     }
 
@@ -86,6 +86,7 @@ class Calendar {
         margin: 5px; \
         padding-top: 5px;\
         padding-bottom: 5px;';
+
     }
 
     _createDay() {
@@ -99,6 +100,15 @@ class Calendar {
         border: 2px solid #837878; \
         transition: .25s ease all; \
         margin-bottom: 6px;';
+        nthDay.onclick = function(e) {
+            if (e.target.firstChild) {
+                this._dataPickerValue = e.target.firstChild.data;
+                
+                if (document.querySelector('input')) {
+                    // document.querySelector('input').value = new Date(this._today.getFullYear(), this._today.getMonth(), this._dataPickerValue);
+                }
+            }
+        };
         nthDay.onmouseover = function() {
             this.style.borderColor = '#bbadad';
             this.style.backgroundColor = 'rgba(255,255,255,.2)';
@@ -292,7 +302,8 @@ class Calendar {
 }
 
 class DataPicker extends Calendar {
-    createCalendar() {
+
+    createPicker() {
         super.createCalendar();
         document.body.appendChild(this._createInput());
     }
@@ -300,6 +311,13 @@ class DataPicker extends Calendar {
     _createInput() {
         var input = document.createElement('input');
         input.className = 'input';
+        input.style.cssText ='display: flex; \
+        width: 30%; \
+        height: 20px; \
+        outline: none; \
+        font-size: 18px; \
+        margin: auto; \
+        margin-top: 50px;';
         input.id = 'myInput';
         input.value = this._today = new Date();
 
@@ -309,7 +327,7 @@ class DataPicker extends Calendar {
 
 (function() {
     var dataPicker = new DataPicker();
-    dataPicker.createCalendar();
+    dataPicker.createPicker();
 
     document.body.style.cssText = 'background-color: rgb(204, 200, 200); \
     color: #fff';
