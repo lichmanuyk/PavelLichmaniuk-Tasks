@@ -1,0 +1,9 @@
+input {
+    display: flex;
+    width: 30%;
+    height: 20px;
+    outline: none;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 50px;
+}
