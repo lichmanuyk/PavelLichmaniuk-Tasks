@@ -55,7 +55,7 @@ function lastNums(n) {
     }
   }
   result = String(num);
-  return result.slice(-10);
+  return result;
 }
 
 function customMathPow(i) {
@@ -111,9 +111,9 @@ function isPalindrom(phrase) {
 
 // Task 9
 function sumOfNumber(num) {
-  num = num + "";
+  stringNum = String(num);
   var count = 0;
-  var arr = num.split("");
+  var arr = stringNum.split("");
   for (var i = 0; i < arr.length; i++) {
     count += Number(arr[i]);
   }
