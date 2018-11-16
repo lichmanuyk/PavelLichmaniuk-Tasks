@@ -100,15 +100,7 @@ class Calendar {
         border: 2px solid #837878; \
         transition: .25s ease all; \
         margin-bottom: 6px;';
-        nthDay.onclick = function(e) {
-            if (e.target.firstChild) {
-                this._dataPickerValue = e.target.firstChild.data;
-                
-                if (document.querySelector('input')) {
-                    // document.querySelector('input').value = new Date(this._today.getFullYear(), this._today.getMonth(), this._dataPickerValue);
-                }
-            }
-        };
+        nthDay.onclick = this._setDataPickerInput.bind(this);
         nthDay.onmouseover = function() {
             this.style.borderColor = '#bbadad';
             this.style.backgroundColor = 'rgba(255,255,255,.2)';
@@ -119,6 +111,29 @@ class Calendar {
         };
         return nthDay;
     }
+
+    _setDataPickerInput(e) {
+        if (e.target.firstChild) {
+            this._dataPickerValue = e.target.firstChild.data;
+            if (document.querySelector('input')) {
+                document.querySelector('input').value = this._formatDate(new Date(this._today.getFullYear(), this._today.getMonth(), this._dataPickerValue));
+            }
+        }
+    }
+
+    _formatDate(date) {
+
+        var dd = date.getDate();
+        if (dd < 10) dd = '0' + dd;
+      
+        var mm = date.getMonth() + 1;
+        if (mm < 10) mm = '0' + mm;
+      
+        var yy = date.getFullYear() % 100;
+        if (yy < 10) yy = '0' + yy;
+      
+        return dd + '.' + mm + '.' + yy;
+      }
 
     _addWeekDay(n) {
         var arr = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
@@ -312,15 +327,15 @@ class DataPicker extends Calendar {
         var input = document.createElement('input');
         input.className = 'input';
         input.style.cssText ='display: flex; \
-        width: 30%; \
+        min-width: 500px; \
         height: 20px; \
         outline: none; \
         font-size: 18px; \
         margin: auto; \
         margin-top: 50px;';
         input.id = 'myInput';
-        input.value = this._today = new Date();
-
+        this._today = new Date();
+        input.value = this._formatDate(this._today);
         return input;
     }
 }
