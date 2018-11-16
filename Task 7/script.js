@@ -115,6 +115,7 @@ class Calendar {
     _setDataPickerInput(e) {
         if (e.target.firstChild) {
             this._dataPickerValue = e.target.firstChild.data;
+            // e.target.style.color = 'red';
             if (document.querySelector('input')) {
                 document.querySelector('input').value = this._formatDate(new Date(this._today.getFullYear(), this._today.getMonth(), this._dataPickerValue));
             }
@@ -334,9 +335,26 @@ class DataPicker extends Calendar {
         margin: auto; \
         margin-top: 50px;';
         input.id = 'myInput';
+
         this._today = new Date();
         input.value = this._formatDate(this._today);
+
+        input.onchange = this._setDateFromPicker.bind(this);
+
         return input;
+    }
+
+    _setDateFromPicker(e) {
+        var arr = e.target.value.split('.');
+        var day = arr[2];
+        var month = arr[1];
+        var year = arr[0];
+        this._today = new Date(20 + arr[2], arr[1]-1, arr[0]);
+
+        this._clearDays();
+        this._changeMonthTitle();
+        this._setActive();
+        this._fillCalendarDays(this._today);
     }
 }
 
