@@ -6,7 +6,7 @@ class Calendar {
         this._weeksDay;
         this._today = new Date();
     }
-   
+
 
     createCalendar() {
         var calendar = document.createElement('div');
@@ -15,18 +15,15 @@ class Calendar {
         calendar.style.cssText = 'max-width: 800px; \
         background-color: rgb(112, 107, 107); \
         margin: auto; \
-        margin-top: 50px;';
-
-        
-
-        calendar.style.userSelect = 'none';
+        margin-top: 50px; \
+        user-select: none;';
 
         calendar.appendChild(this._createCalendarHeader());
         calendar.appendChild(this._createCalendarWeekDays());
         calendar.appendChild(this._appendCalendarDays());
         this._setActive();
 
-        document.body.appendChild(calendar);
+        return calendar;
     }
 
     _createCalendarHeader() {
@@ -98,11 +95,12 @@ class Calendar {
         border: 2px solid #837878; \
         transition: .25s ease all; \
         margin-bottom: 6px;';
-        nthDay.onmouseover = function() {
+
+        nthDay.onmouseover = function () {
             this.style.borderColor = '#bbadad';
             this.style.backgroundColor = 'rgba(255,255,255,.2)';
         };
-        nthDay.onmouseout = function() {
+        nthDay.onmouseout = function () {
             this.style.borderColor = '#837878';
             this.style.backgroundColor = 'transparent';
         };
@@ -146,13 +144,13 @@ class Calendar {
         justify-content: center;';
 
         calendarBtnPrev.onclick = this._refillCalendarDaysPrev.bind(this);
-
-        calendarBtnPrev.onmouseover = function() {
+        calendarBtnPrev.onmouseover = function () {
             this.style.backgroundColor = 'rgb(187, 78, 78)';
         };
-        calendarBtnPrev.onmouseout = function() {
+        calendarBtnPrev.onmouseout = function () {
             this.style.backgroundColor = 'rgb(190, 100, 100)';
         };
+
         calendarBtnPrev.appendChild(document.createTextNode('<'));
 
         return calendarBtnPrev;
@@ -184,11 +182,10 @@ class Calendar {
         justify-content: center;';
 
         calendarBtnNext.onclick = this._refillCalendarDaysNext.bind(this);
-
-        calendarBtnNext.onmouseover = function() {
+        calendarBtnNext.onmouseover = function () {
             this.style.backgroundColor = 'rgb(187, 78, 78)';
         };
-        calendarBtnNext.onmouseout = function() {
+        calendarBtnNext.onmouseout = function () {
             this.style.backgroundColor = 'rgb(190, 100, 100)';
         };
         calendarBtnNext.appendChild(document.createTextNode('>'));
@@ -197,30 +194,29 @@ class Calendar {
     }
 
     _refillCalendarDaysPrev() {
-        this._today = new Date(this._today.getFullYear(), this._today.getMonth()-1, this._today.getDate());
+        this._today = new Date(this._today.getFullYear(), this._today.getMonth() - 1, this._today.getDate());
         this._clearDays();
         this._changeMonthTitle();
         this._setActive();
         this._fillCalendarDays(this._today);
-        
     }
 
     _refillCalendarDaysNext() {
-        this._today = new Date(this._today.getFullYear(), this._today.getMonth()+1, this._today.getDate());
+        this._today = new Date(this._today.getFullYear(), this._today.getMonth() + 1, this._today.getDate());
         this._clearDays();
         this._setActive();
         this._fillCalendarDays(this._today);
         this._changeMonthTitle();
     }
- 
+
     _fillCalendarDays(thisDay) {
         this._daysOverlayChilds = this._calendarDaysOverlay.children;
         var today = new Date(thisDay.getFullYear(), thisDay.getMonth(), thisDay.getDate());
         var firstMonthDay = new Date(today.getFullYear(), today.getMonth(), 1);
         this._weeksDay = firstMonthDay.getDay();
-        var i = this._weeksDay -1;
-        i = i == -1 ? 6: i;
-        var iterCount =  this._getLastDayOfMonth().getDate() + firstMonthDay.getDate() + i - 1;
+        var i = this._weeksDay - 1;
+        i = i == -1 ? 6 : i;
+        var iterCount = this._getLastDayOfMonth().getDate() + firstMonthDay.getDate() + i - 1;
 
         today.setUTCDate(0);
         for (; i < iterCount; i++) {
@@ -240,39 +236,39 @@ class Calendar {
     }
 
     _clearDays() {
-        for (var i = 0 ; i < 42; i++) {
+        for (var i = 0; i < 42; i++) {
             this._daysOverlayChilds[i].textContent = '';
         }
     }
- 
+
     _setActive() {
         if (new Date().getMonth() === this._today.getMonth() && new Date().getFullYear() === this._today.getFullYear()) {
             var today = new Date().getDate();
             var newDate = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
             var x = today + newDate.getDay() - 2;
-    
+
             this._daysOverlayChilds[x].style.backgroundColor = 'rgba(255,255,255,.2)';
             this._daysOverlayChilds[x].style.borderColor = '#bbadad';
-            this._daysOverlayChilds[x].onmouseout = function() {
+            this._daysOverlayChilds[x].onmouseout = function () {
                 this.style.borderColor = '#bbadad';
                 this.style.backgroundColor = 'rgba(255,255,255,.2)';
-            };
+            }
         } else {
             var today = new Date().getDate();
             var x = today + 2;
-    
+
             this._daysOverlayChilds[x].style.backgroundColor = 'transparent';
             this._daysOverlayChilds[x].style.borderColor = '#837878';
-            this._daysOverlayChilds[x].onmouseover = function() {
+            this._daysOverlayChilds[x].onmouseover = function () {
                 this.style.borderColor = '#bbadad';
                 this.style.backgroundColor = 'rgba(255,255,255,.2)';
             };
-            this._daysOverlayChilds[x].onmouseout = function() {
+            this._daysOverlayChilds[x].onmouseout = function () {
                 this.style.borderColor = '#837878';
                 this.style.backgroundColor = 'transparent';
             };
         }
-        
+
     }
 
     _changeMonthTitle() {
@@ -281,18 +277,19 @@ class Calendar {
 
     _fillMonthTitle() {
         var monthTitle;
-        var monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 
-        'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+        var monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август',
+            'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
         var iter = this._today.getMonth();
         monthTitle = monthNames[iter];
+        
         return monthTitle + ' ' + this._today.getFullYear();
     }
 
 }
 
-(function() {
+(function () {
     var calendar = new Calendar();
-    calendar.createCalendar();
+    document.body.appendChild(calendar.createCalendar());
 
     document.body.style.cssText = 'background-color: rgb(204, 200, 200); \
     color: #fff';
