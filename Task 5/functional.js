@@ -24,17 +24,17 @@ function Mercedes(model, power) {
     isHeadlightsOn = false;
   }
 
-  var ladaStart = this.start;
+  var parentStart = this.start;
   this.start = function() {
-    ladaStart.call(this);
+    parentStart.call(this);
     headlightsOn.call(this);
-    alert("Mercedes is ready to go");
+    console.log("Mercedes is ready to go");
   };
 
-  var ladaStop = this.stop;
+  var parentStop = this.stop;
   this.stop = function() {
-    ladaStop.call(this);
+    parentStop.call(this);
     headlightsOff.call(this);
-    alert("Mercedes is stoped");
+    console.log("Mercedes is stoped");
   };
 }

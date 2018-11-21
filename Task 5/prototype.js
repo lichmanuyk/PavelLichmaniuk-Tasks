@@ -31,11 +31,11 @@ Mercedes.prototype._headlightsOff = function() {
 Mercedes.prototype.start = function() {
   Lada.prototype.start.apply(this);
   this._headlightsOn();
-  alert("Mercedes is ready to go");
+  console.log("Mercedes is ready to go");
 };
 
 Mercedes.prototype.stop = function() {
   Lada.prototype.stop.apply(this);
   this._headlightsOff();
-  alert("Mercedes is stoped");
+  console.log("Mercedes is stoped");
 };

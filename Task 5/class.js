@@ -31,12 +31,12 @@ class Mercedes extends Lada {
   start() {
     super.start();
     this._headlightsOn();
-    alert("Mercedes is ready to go");
+    console.log("Mercedes is ready to go");
   }
 
   stop() {
     super.stop();
     this._headlightsOff();
-    alert("Mercedes is stoped");
+    console.log("Mercedes is stoped");
   }
 };
